@@ -13,4 +13,12 @@ class FirstNegativeIntegerInSizeKTest {
         int[] expected = {-1, -1, -7, -15, -15, -15, 0};
         assertEquals(Arrays.toString(expected), Arrays.toString(sizeK.calculate(nums, 3)));
     }
+
+    @Test
+    void testcase2(){
+        FirstNegativeIntegerInSizeK sizeK = new FirstNegativeIntegerInSizeK();
+        int[] nums = {12, 13};
+        int[] expected = {-1};
+        assertEquals(Arrays.toString(expected), Arrays.toString(sizeK.calculate(nums, 3)));
+    }
 }
